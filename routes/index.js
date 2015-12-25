@@ -39,8 +39,8 @@ router.post('/submit',function(req,res){
     if(err) throw err;
   });
   writing = writing.replace(/(?:\r\n|\r|\n)/g, '<br />');
-  //sendMail.sendWriting(teacher_email,writing,name);
-  //sendMail.sendWritingConfirmation(user_email,writing,name);
+  sendMail.sendWriting(teacher_email,writing,name);
+  sendMail.sendWritingConfirmation(user_email,writing,name);
   res.redirect('/spread');
 });
 
