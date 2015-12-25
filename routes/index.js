@@ -38,7 +38,6 @@ router.post('/submit',function(req,res){
   response.save(function(err){
     if(err) throw err;
   });
-  console.log(response);
   writing = writing.replace(/(?:\r\n|\r|\n)/g, '<br />');
   //sendMail.sendWriting(teacher_email,writing,name);
   //sendMail.sendWritingConfirmation(user_email,writing,name);
