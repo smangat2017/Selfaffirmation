@@ -3,12 +3,12 @@ h1 { margin: 20px; }
 p { margin: 20px; }
 textarea {
   resize: none;
-  width: 98%;
+  width: 40%;
   height: 98%;
-  position:
-  absolute;
+  position: absolute;
   top: 0px;
-  border: 0px;
+  left: 30%;
+  border: 1px;
   margin: 1%;
  }
 
